@@ -1,0 +1,1 @@
+9999999999{"name": "opuslib", "version": "3.0.1", "summary": "Python bindings to the libopus, IETF low-delay audio codec", "requires_dist": null, "requires_python": null, "files": [{"file": "opuslib-3.0.1.tar.gz", "hash": "sha256:2cb045e5b03e7fc50dfefe431e3404dddddbd8f5961c10c51e32dfb69a044c97"}], "yanked": false, "_cache_version": "2.0.0"}
