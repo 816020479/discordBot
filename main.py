@@ -8,6 +8,7 @@ import os
 import json
 from flask import Flask
 from threading import Thread
+from dotenv import load_dotenv
 # Discord bot setup
 
 
@@ -17,9 +18,13 @@ intents.voice_states = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
 
+# Load environment variables from .env file
+load_dotenv()
+
 # Secret token variable (replace 'YOUR_BOT_TOKEN' with your actual bot token)
-TOKEN = os.getenv('MTI0NzMzMDYwNTEzMDMyMjA3MQ.GAbnZg.mBO1JOv6T-KZA09GcSXtFIOUPq0NbZ2AEzRicE')
-TOKEN = 'MTI0NzMzMDYwNTEzMDMyMjA3MQ.GAbnZg.mBO1JOv6T-KZA09GcSXtFIOUPq0NbZ2AEzRicE'
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 
 # Flask setup
 app = Flask('')
